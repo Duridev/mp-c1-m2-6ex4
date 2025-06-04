@@ -10,14 +10,18 @@ namespace ejercicio2_modulo1
             float porcentaje;
 
             sueldo = 15000;
-            porcentaje = 0.05;
+            porcentaje = 0.05f;
 
             Console.WriteLine("Ingresa las ventas realizadas por el vendedor");
             ventas = int.Parse(Console.ReadLine());
 
-            comision = int.Parse(ventas * porcentaje);
+            comision = (int)(ventas * porcentaje);
 
-            totalPagar = int.Parse(comision + sueldo);
+            totalPagar = comision + sueldo;
+
+            Console.WriteLine($"La comisión para el vendedor es de ${comision}")
+
+            Console.WriteLine($"Y el total del sueldo es de: ${totalPagar}")
         }
     }
 }
