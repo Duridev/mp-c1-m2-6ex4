@@ -19,9 +19,9 @@ namespace ejercicio2_modulo1
 
             totalPagar = comision + sueldo;
 
-            Console.WriteLine($"La comisión para el vendedor es de ${comision}")
+            Console.WriteLine($"La comisión para el vendedor es de ${comision}");
 
-            Console.WriteLine($"Y el total del sueldo es de: ${totalPagar}")
+            Console.WriteLine($"Y el total del sueldo es de: ${totalPagar}");
         }
     }
 }
